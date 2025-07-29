@@ -1,0 +1,37 @@
+/*This code is for the Navigation section at the top*/
+/* Navbar.css */
+.logo-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem; /* space between logo image and brand text */
+  flex-direction: column; /* stack image and text vertically */
+  gap: 0.2rem; /* space between image and text */
+}
+
+.logo-wrapper img {
+  height: 150px; /* or 40px max for navbars */
+  width: auto;
+  object-fit: contain;
+  transform: translate(-50px, 10px); /* moves image left 10px and up 10px */
+}
+
+.logo-text {
+  font-family: "Jost", sans-serif;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #333;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-align: center;
+  margin-top: 0; /* space between image and text */
+  transform: translate(-10px, -40px); /* this moves it upward */
+}
+
+.highlight-brand {
+  color: blue;
+}
+/*end!!!*/
+
+/* This is for the hover effect in the nav bar*/
+
+/*End*/

@@ -1,0 +1,145 @@
+/*This CSS is for the Welcome TO XSTRA BRANDS text in the home page*/
+/* page1.css */
+
+.welcome-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* min-height: 50vh; /* Takes half the screen height */
+  text-align: center;
+  padding: 1rem;
+  font-size: clamp(1.5rem, 5vw, 2.5rem); /* Responsive font size */
+}
+
+.logo-text {
+  font-family: "Poppins", sans-serif;
+  /*font-weight: 700;*/
+  color: #212a3c;
+  font-size: clamp(1.5rem, 5vw, 2.5rem); /* Responsive font size */
+}
+
+.highlight-brand {
+  color: #f4511e;
+}
+
+/*end*/
+
+/*Here its the CSS fro the paragrah about XSTRA BRANDS in the Home page*/
+.intro-text p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #333;
+  max-width: 600px;
+  animation: fadeInUp 1s ease forwards;
+  opacity: 0;
+  transform: translateY(20px);
+  margin: 0;
+}
+/*Adding Annimation for the text, next to the image*/
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/*End*/
+
+/*This is the css for the home picture on the left and the text description on 
+  the right*/
+.intro-section {
+  padding: 2rem 1rem;
+}
+
+.intro-content {
+  display: flex; /* use flexbox layout to arrange children side-by-side */
+  flex-wrap: nowrap; /* prevent children from wrapping to next line */
+  align-items: stretch; /* stretch children to have equal height */
+  gap: 1rem; /* space (gap) between image and text elements */
+  padding-left: 1rem; /* add space between left edge of container and content */
+  max-height: 530px; /* or height: 400px; adjust as needed */
+}
+
+.intro-text {
+  flex: 1; /* take all remaining space after image */
+  max-width: 50%; /* restrict max width to 50% */
+  font-size: 1.2rem; /* set readable font size */
+  display: flex; /* flexbox for vertical alignment */
+  flex-direction: column; /* arrange text children vertically */
+  justify-content: center; /* vertically center text content */
+}
+
+.intro-image {
+  flex: 0 0 50%; /* fixed width: don't grow or shrink, exactly 50% width */
+  display: flex; /* use flexbox inside to align image if needed */
+  justify-content: flex-start; /* align image content to the left */
+}
+
+.intro-image img {
+  width: 100%; /* image takes full width of container */
+  height: auto; /* keep natural aspect ratio, prevent vertical stretching */
+  max-height: 100%; /* limit image height to container's height */
+  border-radius: 8px; /* rounded corners for the image */
+  object-fit: cover; /* image covers container without distortion */
+}
+
+/* Animation for the description on the right */
+@keyframes slideInRight {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.animate-slide-in-right {
+  animation: slideInRight 1s ease-out forwards;
+}
+/*End*/
+
+/* Responsive: stack vertically on small screens, meaning it adjust the look on 
+smaller screen */
+@media (max-width: 768px) {
+  .intro-content {
+    flex-direction: column;
+  }
+
+  .intro-image,
+  .intro-text {
+    width: 100%;
+    max-width: 100%;
+  }
+}
+/*End*/
+
+/*Here we are adding the CSS for the contact 
+us button in the home page*/
+.section-button {
+  display: flex; /* Use flexbox to align content */
+  justify-content: center; /* Center the button horizontally */
+  align-items: center; /* Center the button vertically */
+  padding: 1.5rem 0; /* Add vertical space above and below the button */
+  width: 100%; /* Make the container span full width */
+}
+
+.section-button button {
+  padding: 0.75rem 1.5rem; /* Space inside the button (top/bottom, left/right) */
+  font-size: 1rem; /* Font size of the button text */
+  background-color: #007bff; /* Button background color (blue) */
+  color: white; /* Button text color */
+  border: none; /* Remove default border */
+  border-radius: 8px; /* Slightly rounded corners */
+  cursor: pointer; /* Show pointer cursor on hover */
+  transition: background-color 0.3s ease; /* Smooth transition effect on hover */
+}
+
+.section-button button:hover {
+  background-color: #0056b3; /* Darker blue when hovering */
+}
+/*End*/
+
+/*Adding animation to the */
+
+/*End*/

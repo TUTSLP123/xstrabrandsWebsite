@@ -1,0 +1,45 @@
+/* Layout container for the about section: image and text side-by-side */
+.about-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 3rem;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+/* Styles for the image part */
+.about-image img {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 10px;
+}
+
+/* Text container next to the image */
+.about-text {
+  flex: 1;
+  min-width: 250px;
+}
+
+/* Heading inside the about-text section */
+.about-text h4 {
+  font-size: 1.5rem;
+  color: #4d2b8d;
+  margin-bottom: 1rem;
+}
+
+/* Paragraph styling */
+.about-text p {
+  font-size: 1rem;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Responsive layout for smaller screens (mobile) */
+@media(max-width: 768px) {
+  .about-section {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}

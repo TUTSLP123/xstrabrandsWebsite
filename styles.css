@@ -1,0 +1,224 @@
+:root{
+
+--sefety-orange_10:hsl(24,100%,50%);
+--sonic-silver:hsl(220,1%,48%);
+--gunmetal_10:hsla(217,21%,16%,0.1);
+--davys-gray:hsl(220,2%,31%);
+--light-gray:hsl(0,0%,88%);
+--gunmetal:hsl(217,21%,16%);
+--cultured:hsl(0,0%,95%);
+--black_40:hsla(0,0%,0%,0.4);
+--black_25:hsla(0,0%,0%,0.25);
+--black_15:hsla(0,0%,0%,0.15);
+--white:hsl(0,0%,100%);
+--snow:hsl(345,20%,96%);
+
+/*typography*/
+
+--ff-jost: 'Jost',sans-serif;
+
+--fs-1:3.8rem;
+--fs-2:2.2rem;
+--fs-3:2rem;
+--fs-4:1.8rem;
+--fs-3:1.4rem;
+
+--fs-600:600;
+--fs-500:500; 
+
+/*spacing*/
+--section-padding:80px;
+
+/*shadow*/
+
+--shadow-1:0px 2px 15px hsla(0,0%,0%.0.05);
+--shadow-2:-10px 10px 40px -2px hsla(217,21%,16%,0.05);
+
+/* border radius*/
+--radius-pill:500px;
+--radius-circle:50%;
+--radius-4:4px;
+
+/*Transition*/
+--transition-1:0.25s ease;
+--transition-2: 0.5s ease;
+--cubic-in: cubic-Bezier(0.51,0.03,0.64,0.28);
+--cubic-out:cubic-bezier(0.33,0.85,0.4,0.96);
+
+}
+
+
+*,
+*::before,
+*::after{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+/*Makes white spaces disappear*/
+body {
+  overflow-x: hidden;
+}
+/*end*/
+
+li{list-style: none;}
+
+a,
+img,
+span,
+button,
+ion-icon{display:black;}
+
+a{
+  color:inherit;
+  text-decoration: none;
+}
+
+img{height:auto;}
+
+button{
+  background:none;
+  border:none;
+  font:inherit;
+  cursor:pointer;
+}
+
+ion-icon{pointer-events: none;}
+
+html{
+  font-family:var(--ff-jost);
+  font-size:10px;
+  scroll-behavior:smooth;
+}
+
+/* Adding the CSS for the XSTRA BRANDS name
+under the logo*/
+.logo-wrapper {
+  display: flex;
+  flex-direction: column;
+  /*align-items: center;  center the text under the image */
+  text-decoration: none; /* remove underline */
+}
+
+.logo img {
+  margin-bottom: 4px; /* Controls space under the image */
+  transform: translate(-10px, -20px); /* X = right 10px, Y = up 10px */
+}
+
+.logo-text {
+  font-family: var(--ff-jost); /* uses the same font */
+  font-size: var(--fs-4);      /* or try var(--fs-2) for bigger text */
+  font-weight: var(--fs-600);  /* bold */
+  color: var(--gunmetal);      /* nice dark color from your palette */
+  margin: 0px;
+  line-height: 1.2; /* Makes spacing tighter */
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transform: translate(60px, -100px); /* X = right 10px, Y = up 10px */
+
+}
+/*Highligting the BRANDS with Blue on the name of the company*/
+.highlight-brand {
+  color: rgb(94, 94, 219); /* Or use your theme variable */
+  /* Example: color: var(--sefety-orange_10); */
+}
+
+/*end*/
+
+/*--------------------------------------------------------------
+  HAMBURGER BUTTON (MOBILE ONLY)
+--------------------------------------------------------------*/
+.menu-toggle {
+  display: none;                      /* Hidden by default (desktop) */
+  background: none;                   /* No browser button styling */
+  border: none;
+  font-size: 1.8rem;                  /* Icon size */
+  cursor: pointer;                    /* Pointer on hover */
+}
+
+
+/*Designing the hamburger menu*/
+
+nav{
+padding:1rem;
+display:flex;
+background-color:rgb(34,37,49);
+top: 0;
+left: 0;
+width: 100%;
+z-index: 1000;
+}
+
+
+body{
+  background-color: var(--white);
+  color:var(--davys-gray);
+  font-size:1.6rem;
+  line-height:1.7; 
+  height: 300vh;
+}
+
+body.active{overflow:hidden;}
+
+body, html {
+  margin: 0;
+  padding: 0;
+}
+
+
+/*Adding CSS for the "Welcome to Xstra Brands message"*/
+.welcome-text {
+  font-size: clamp(1.5rem, 5vw, 3rem); /* Responsive sizing */
+  font-weight: 600;
+  color: #222;
+  font-family: 'Jost', sans-serif;
+  text-align: center;
+  margin-top: -110px; /* Push below the fixed nav */
+}
+
+/*end*/
+
+/*the front image CSS*/
+.my_cover
+{
+  width:300px;
+  height:300px;
+  object-fit: cover;   /* Crop nicely */
+  border-radius: 10px; /* Optional: rounded corners */
+}
+
+.container
+{
+  width:100%;
+  height:auto;
+  display: flex;
+  align-items: center;
+  padding: 2rem;
+}
+
+/*end*/
+
+/*Adding the welcome section*/
+.welcome-section {
+  padding: 5px 20px;
+  background-color: #fdf9f9;
+  /*text-align: center;*/
+}
+/*end*/
+
+/* CSS for the front images*/
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.image-grid img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+/*end*/
