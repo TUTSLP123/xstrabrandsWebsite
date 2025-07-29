@@ -8,7 +8,7 @@ import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 
 // Importing BrowserRouter, Routes, and Route from react-router-dom to enable routing
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter, Routes, Route } from "react-router-dom";
 
 // Importing global CSS styles
 import "./index.css";
@@ -25,7 +25,7 @@ import About from "./About.jsx";
 createRoot(document.getElementById("root")).render(
   <StrictMode>
     {/* Wrapping the app in BrowserRouter to enable client-side routing */}
-    <BrowserRouter basename="/xstrabrandsWebsite">
+    <HashRouter>
       {/* Defining the routes for the app */}
       <Routes>
         {/* Route for the home page (path "/") */}
@@ -36,7 +36,7 @@ createRoot(document.getElementById("root")).render(
         <Route path="/services" element={<Services />} />
         <Route path="/about" element={<About />} />
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   </StrictMode>
 );
 
