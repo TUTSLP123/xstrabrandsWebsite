@@ -25,7 +25,7 @@ import About from "./About.jsx";
 createRoot(document.getElementById("root")).render(
   <StrictMode>
     {/* Wrapping the app in BrowserRouter to enable client-side routing */}
-    <BrowserRouter>
+    <BrowserRouter basename="/xstrabrandsWebsite">
       {/* Defining the routes for the app */}
       <Routes>
         {/* Route for the home page (path "/") */}
