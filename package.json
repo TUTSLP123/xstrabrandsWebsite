@@ -2,6 +2,7 @@
   "name": "xtrabrands",
   "private": true,
   "version": "0.0.0",
+  "homepage": "https://TUTSLP123.github.io/xstrabrandsWebsite",
   "type": "module",
   "scripts": {
     "dev": "vite",
