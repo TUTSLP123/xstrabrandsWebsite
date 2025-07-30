@@ -16,7 +16,7 @@
 /* Ensure the body takes up at least the full height of the viewport */
 body {
   min-height: 100vh;
-  font-family: "Josefin Sans", sans-serif; /* Set the global font for the website */
+  font-family: "Poppins", sans-serif; /* Set the global font for the website */
   background-color: #fff; /* Or whatever color you want */
 }
 
