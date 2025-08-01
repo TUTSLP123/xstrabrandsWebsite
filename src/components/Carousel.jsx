@@ -25,7 +25,11 @@ export default function Carousel({
         className="flex transition-transform ease-out duration-500"
         style={{ transform: `translateX(-${curr * 100}%)` }}
       >
-        {slides}
+        {slides.map((slide, i) => (
+          <div key={i} className="w-full flex-shrink-0 h-full">
+            {slide}
+          </div>
+        ))}
       </div>
       {/*Puts the buttons on top at the Carousel*/}
       <div
