@@ -32,6 +32,19 @@
 }
 /*end!!!*/
 
-/* This is for the hover effect in the nav bar*/
+/* Controlling the Background color in the Navbar*/
+header {
+  background-color: white;
+  padding: 0.5rem 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional shadow */
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1rem;
+  background-color: white !important;
+}
 
 /*End*/

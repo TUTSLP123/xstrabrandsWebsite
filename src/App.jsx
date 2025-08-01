@@ -39,7 +39,7 @@ function App() {
           {/*Adding the Carousel here*/}
           <main className="App px-10 py-6">
             <div className="flex flex-col md:flex-row items-center gap-6">
-              <div className="max-w-lg pl-10">
+              <div className="w-full md:w-1/2 md:h-[400px] pl-10 sm:-ml-2">
                 <Carousel autoSlide={true}>
                   {slides.map((s, i) => (
                     <img key={i} src={s} />
@@ -50,7 +50,7 @@ function App() {
               {/*End*/}
 
               {/*This section is for the description next to the Caraosel in the home page*/}
-              <div className="flex-1 animate-slide-in-right text-gray-800 text-lg leading-relaxed px-6">
+              <div className="flex-1 animate-slide-in-right text-gray-800 text-xl md:text-2xl leading-relaxed px-6">
                 <p>
                   <span className="font-semibold">Xstra Brands</span> is a 100%
                   black-owned telecommunications leader, specializing in expert

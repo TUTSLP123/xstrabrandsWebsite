@@ -18,6 +18,7 @@ body {
   min-height: 100vh;
   font-family: "Poppins", sans-serif; /* Set the global font for the website */
   background-color: #fff; /* Or whatever color you want */
+  font-size: 1.1rem; /* base font size increased */
 }
 
 a {
@@ -62,7 +63,7 @@ header {
 
 .container ul li a {
   color: #212a3c;
-  font-size: 1.3rem;
+  font-size: 1.6rem; /*Increase the font size*/
   padding: 0.7rem 1rem;
   display: block;
   border-radius: 10px;
@@ -137,6 +138,18 @@ body,
 
 .main-content {
   flex-grow: 1;
+}
+
+/*End*/
+
+/*Removing the lag on the website because the Footer takes time to load
+so this code mitigates that*/
+
+.main-content {
+  flex-grow: 1;
+  min-height: calc(
+    100vh - 100px
+  ); /* Adjust 100px to match the height of your Navbar + Footer */
 }
 
 /*End*/

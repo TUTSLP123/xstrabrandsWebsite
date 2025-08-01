@@ -28,30 +28,30 @@ export default function About() {
           transition={{ duration: 1 }}
           className="bg-white rounded-2xl shadow-lg p-6 space-y-4"
         >
-          <p className="text-gray-700 leading-relaxed text-lg">
+          <p className="text-gray-700 leading-relaxed text-xl md:text-2xl">
             Xstra Brands is a 100% black-owned telecommunications delivery and
             support company, founded in 2017.
           </p>
-          <p className="text-gray-700 leading-relaxed text-lg">
+          <p className="text-gray-700 leading-relaxed text-xl md:text-2xl">
             We are a leading provider of wireless and data infrastructure
             solutions across Southern Africa. Our services include the supply of
             wireless links and related technologies to network operators,
             internet service providers, and data system integrators.
           </p>
-          <p className="text-gray-700 leading-relaxed text-lg">
+          <p className="text-gray-700 leading-relaxed text-xl md:text-2xl">
             Xstra Brands is the preferred partner for both private and public
             enterprises in South Africa, offering wireless, cabling, and a
             variety of networking solutions. We collaborate with top industry
             players to deliver efficient Wi-Fi and RF solutions.
           </p>
-          <p className="text-gray-700 leading-relaxed text-lg">
+          <p className="text-gray-700 leading-relaxed text-xl md:text-2xl">
             We follow strict business processes to ensure that our products and
             services meet the highest quality standards. Our mission is to boost
             our clients’ competitiveness by providing timely, reliable, and
             cost-effective solutions—a value deeply rooted in our company's
             ethos.
           </p>
-          <p className="text-gray-700 leading-relaxed text-lg">
+          <p className="text-gray-700 leading-relaxed text-xl md:text-2xl">
             To uphold our commitment to excellence, Xstra Brands ensures we are
             continuously certified and aligned with industry best practices. We
             focus on the ongoing improvement of our operations, technical

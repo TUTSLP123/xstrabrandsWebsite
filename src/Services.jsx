@@ -29,7 +29,7 @@ export default function Services() {
           transition={{ duration: 0.8 }}
           className="bg-white p-8 rounded-2xl shadow-md max-w-3xl w-full font-poppins" //bg-gray-100 p-8 bg-white rounded-2xl
         >
-          <ul className="list-square list-inside text-gray-700 leading-relaxed space-y-3 text-base">
+          <ul className="list-square list-inside text-gray-700 leading-relaxed space-y-3 text-xl md:text-2xl">
             <li>
               Wireless networks including satellite links, outdoor radio links,
               Optical Wireless Broadband links, Wireless Mesh Networks, and
