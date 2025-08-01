@@ -20,12 +20,19 @@ export default function Carousel({
     return () => clearInterval(slideInterval);
   }, []);
   return (
-    <div className="overflow-hidden relative">
+    <div className="overflow-hidden relative w-full h-[300px] md:h-[400px]">
       <div
         className="flex transition-transform ease-out duration-500"
         style={{ transform: `translateX(-${curr * 100}%)` }}
       >
-        {slides}
+        {slides.map((slide, i) => (
+          <div key={i} className="flex-shrink-0 w-full h-full">
+            {" "}
+            {/* <-- CHANGE HERE */}
+            <img src={slide} className="w-full h-full object-cover" />{" "}
+            {/* <-- CHANGE HERE */}
+          </div>
+        ))}
       </div>
       {/*Puts the buttons on top at the Carousel*/}
       <div
